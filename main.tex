@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+
+\center % Center everything on the page
+
+\includegraphics[scale=0.5]{Udea.png}\\[2cm] 
+
+\textsc{\Large Informática II}\\[2cm] 
+
+{ \huge \bfseries El producto de un fracaso}\\[3cm]
+
+\textbf{Autor:}\\ 
+\textsc{Mauricio Aguas}\\[4cm] 
+
+
+{\large \today}\\[2cm]
+
+\vfill 
+
+\end{titlepage}
+
+\newpage
+
+Ha habido muchas crisis en la historia de las matemáticas. Las matemáticas no son perfectas como muchos creen, pero no todas las imperfecciones son malas. En este caso vamos hablar sobre esa crisis que dio como resultado no esperado a la computación.
+
+\vspace{1mm}
+
+Todo empieza hace un poco más de 100 años atrás con un matemático ruso, George Cantor. Cantor estaba obsesionado con la noción de infinito, dando nacimiento a la Teoría de Conjuntos, la cual daba otra visión a las matemáticas de aquel entonces. \\
+Fue muy controvertido, y lo que no ayudó es, de hecho, que había algunas contradicciones. Se convirtió en algo más que una cuestión de opinión. Hubo algunos casos en los que te metiste en problemas muy graves, te salieron sin sentido. Y el lugar en el que obtienes tonterías obvias de hecho es un teorema de Cantor que dice que para cualquier conjunto infinito hay un conjunto infinito más grande que es el conjunto de todos sus subconjuntos, lo que suena bastante razonable. \\ 
+Entonces, el problema es que si crees que para cualquier conjunto infinito hay un conjunto que es aún más grande, ¿qué sucede si lo aplicas al conjunto universal, al conjunto de todo? El problema es que, por definición, el conjunto de todo lo tiene todo, y este método supuestamente le daría un conjunto más grande, que es el conjunto de todos los subconjuntos de todo. Entonces debe haber un problema, y el problema fue notado por el filósofo y matemático, Bertrand Russell.
+
+\vspace{2mm}
+
+El desastre que Russell notó en esta prueba de Cantor fue el conjunto de todos los conjuntos que no son miembros de sí mismos, que resulta ser el paso clave en la prueba. Y el conjunto de todos los conjuntos que no son miembros de sí mismos parece una forma razonable de definir un conjunto, pero si preguntas si está dentro de sí mismo o no, lo que sea que asumas que obtienes lo contrario, es una contradicción, es como decir esto La declaración es falsa. El conjunto de todos los conjuntos que no son miembros de sí mismos está contenido en sí mismo y solo si no está contenido en sí mismo. \\
+Entonces, ¿esto significa que algunas formas de definir conjuntos son malas o que el conjunto universal te mete en problemas? ¿Qué hay de malo con el conjunto de todo? Así que había un problema con la teoría de conjuntos, que se hizo cada vez más claro. Creo que Russell ayudó a que todos reconocieran que tuvimos una crisis grave y que los métodos de razonamiento que a primera vista parecían perfectamente legítimos en algunos casos llevaron a un desastre evidente, a contradicciones. En este punto, un matemático alemán viene al rescate, David Hilbert.
+
+\vspace{2mm}
+
+David Hilbert fue un matemático muy importante a principios del siglo. A Hilbert le gustaba la teoría de conjuntos. Le gustó este enfoque cantoriano abstracto. Y Hilbert tuvo la idea de resolver de una vez por todas estos problemas. ¿Cómo iba a hacerlo?\\
+Hilbert dijo que usemos toda la tecnología de la lógica simbólica, que mucha gente estuvo involucrada en inventar, y vamos al extremo final. Porque una de las razones por las que te metiste en problemas y obtuviste contradicciones en matemáticas con la teoría de conjuntos es porque las palabras son muy vagas. Lo que queremos hacer para deshacernos de todos estos problemas en matemáticas y en el razonamiento es deshacernos de los pronombres, por ejemplo, no sabes a qué se refieren los pronombres. Y hay todo tipo de cosas que son vagas en el lenguaje normal. \\
+La solución que proponía Hilbert era inventar un lenguaje completamente artificial con reglas del juego completamente precisas, gramática artificial que elimine todos estos problemas, como los problemas que tenía Russell. Este fue un programa ambicioso para poner de una vez por todas las matemáticas en una base firme, conocido como Formalismo.
+
+\vspace{2mm}
+
+Y Hilbert enfatizó que quería que las reglas del juego para este sistema axiomático formal para todas las matemáticas sean tan precisas que tenga una prueba mecánica inspector. Por lo tanto, es completamente cierto y objetivo y mecánico si una prueba obedece las reglas o no. No debería haber ningún elemento humano, no debería haber un elemento subjetivo, no debería haber una cuestión de interpretación. Si alguien afirma que tiene una prueba, debe ser absolutamente claro, mecánico, verificarlo y ver que obedece las reglas.\\
+Así que esta es la idea de que las matemáticas deben ser absolutamente negras o blancas, precisas, la verdad absoluta. Esta es la noción tradicional de las matemáticas.
+El mundo real que conocemos es un desastre absoluto, ¿verdad? todo es complicado y desordenado. Pero el único lugar donde las cosas deberían ser absolutamente claras, negras o blancas, es en matemática pura.\\
+Hilbert propuso esto como un objetivo para poner las matemáticas en una base muy firme. Y él y un grupo de colaboradores muy brillantes, incluido John Von Neumann (el cual aporto al mundo de la informática en otros aspectos), se pusieron a trabajar en esto, y durante un tiempo, durante treinta años, pareció algo alentador. Pero hubo unos “pequeños problemas”, Kurt Gödel y Alan Turing.
+
+\vspace{2mm}
+
+Estos dos mostraron que no se podía hacer, que había obstáculos fundamentales para formalizar todas las matemáticas y hacer que las matemáticas fueran absolutamente en blanco y negro y absolutamente cristalinas. Gödel comienza con “esta afirmación es falsa”, lo que ahora digo es una mentira, estoy mintiendo. Si estoy mintiendo, y es una mentira que estoy mintiendo, ¡entonces estoy diciendo la verdad! Entonces, “esta declaración es falsa” es falsa si y solo si es verdad, entonces hay un problema. Gödel consideró en cambio “esta afirmación no es demostrable “.\\
+Ahora piense en una declaración que diga que no es demostrable. Hay dos posibilidades: es demostrable o no demostrable. Esto supone que puede hacer una declaración que diga que no es demostrable, que es una forma de decir esto dentro del sistema de Hilbert.\\
+Bueno, si es demostrable, y dice que no es demostrable, estamos probando algo que es falso. Entonces eso no es muy agradable. Y si no se puede probar y dice que no se puede probar, bueno, entonces, lo que dice es cierto, no se puede probar, y tenemos un agujero. En lugar de probar algo falso, tenemos algo incompleto, tenemos una afirmación verdadera de que nuestra formalización no ha logrado capturar. Entonces, la idea es que o estamos probando declaraciones falsas (lo que es aterrador) u obtenemos algo que no es tan malo, pero aun así es horrible, que es que nuestro sistema axiomático formal está incompleto. Hay algo que es cierto, pero no podemos probarlo dentro de nuestro sistema. ¡Y por lo tanto, el objetivo de formalizar de una vez por todas las matemáticas termina en el piso!
+
+\vspace{2mm}
+
+5 años después ocurre algo mágico. El joven ingles Alan Turing da la primera idea de lo que hoy en día conocemos como computadora, una máquina de Turing. Todo esto está en un documento de Turing en 1936, cuando no había computadoras, por lo que es un trabajo fantástico. Y para muchos esta es la invención de la computadora.\\
+Lo que muestra Turing es, de hecho, que hay una afirmación relativamente concreta que escapa al poder de las matemáticas. Ahora pensamos en las computadoras como dispositivos físicos, por lo que son casi como algo en física. Es una máquina que funciona, es una idealización de eso.\\
+En el articulo Turing habla de un problema “El problema de detención” dice que no hay forma de decidir si un programa de computadora finalmente se detendrá. Ahora, obviamente, decidir si un programa de computadora se detiene es la cosa más fácil del mundo. Lo ejecutas y cuando te quedas sin paciencia, eso es todo, no se detiene en lo que a ti respecta. ¡A quién le importa, no puedes esperar más! Pero lo que mostró Turing es que hay un problema si no pones límite de tiempo, si no pones límite de tiempo, entonces no hay solución. No hay forma de decidir de antemano si un programa de computadora se detendrá o no. Si se detiene, puede descubrirlo al ejecutarlo. El problema es darse cuenta de que tienes que rendirte. Por lo tanto, no existe un procedimiento mecánico que decida de antemano si un programa de computadora se detendrá o no y, por lo tanto, resulta que no hay un conjunto de axiomas matemáticos en el sentido de Hilbert que pueda permitirle probar si un programa se detendrá o no.\\
+Ahora, en la práctica, ejecutar todas las pruebas posibles requiere una cantidad astronómica de tiempo. ¡Imagínese cuántas pruebas hay de una página de largo! ¡Nunca los superarías! Pero, en principio, puede revisar todas las pruebas posibles en orden de tamaño y verificar si obedecen las reglas, si se trata de un sistema axiomático formal de Hilbert. Entonces, si tuvo una axiomatización formal de las matemáticas que le permitió probar siempre si un programa se detiene o no, eso le daría un procedimiento mecánico, al ejecutar todas las pruebas posibles en orden de tamaño, para decidir si un programa se detendrá o no. Y Turing demostró que no puedes hacerlo. 
+
+\vspace{2mm}
+
+El trabajo de Turing hace que los límites de las matemáticas parezcan mucho más naturales, porque estamos hablando de una pregunta sobre un dispositivo físico, es una computadora.
+
+
+\vspace{2mm} 
+
+\newpage
+
+\begin{thebibliography}{X}
+\bibitem{uno}LA DEMOSTRACIÓN DE GÖDEL. E. Nagel y J. R. Newman, en Sigma, el mundo de las matemáticas, vol. 5, págs. 57- 84. Editorial Grijalbo. Barcelona. 1958.
+
+
+\bibitem GGÖDEL: A LIFE OF LOGIC. H. L. Casti W. DePauli. Cambridge, Massachusetts, Perseus Publishing, 2000.
+\bibitem LLOS LIMITES DE LAS MATEMATICAS. GJ Chaitin, Springer-Verlag, 1998
+
+
+\end{thebibliography}
+
+
+
+
+
+\end{document}
