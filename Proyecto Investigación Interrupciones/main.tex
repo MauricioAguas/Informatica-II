@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+
+\center % Center everything on the page
+
+\includegraphics[scale=0.5]{Udea.png}\\[2cm] 
+
+\textsc{\Large Informática II}\\[2cm] 
+
+{ \huge \bfseries Interrupciones}\\[3cm]
+
+\textbf{Autor:}\\ 
+\textsc{Mauricio Aguas}\\[4cm] 
+
+
+{\large \today}\\[2cm]
+
+\vfill 
+
+\end{titlepage}
+
+\newpage
+En las computadoras digitales, una interrupción es la respuesta del procesador a un evento que requiere atención del software. Una condición de interrupción alerta al procesador y sirve como una solicitud para que éste interrumpa el código de ejecución actual cuando esté permitido, de modo que el evento pueda ser procesado de manera oportuna. Si se acepta la solicitud, el procesador responde suspendiendo sus actividades actuales, guardando su estado y ejecutando una función llamada manejador de interrupciones o una rutina de servicio de interrupción para ocuparse del evento.
+
+
+\vspace{4mm}
+
+Las interrupciones de hardware fueron introducidas como una optimización, eliminando el tiempo de espera improductivo en los bucles de votación, en espera de eventos externos. El primer sistema que utilizó este enfoque fue el DYSEAC, completado en 1954, aunque los sistemas anteriores proporcionaban funciones de trampa de errores.
+
+A la computadora UNIVAC 1103 se le atribuye generalmente el primer uso de interrupciones en 1953. Anteriormente, en el UNIVAC I (1951) "El desbordamiento aritmético o bien desencadenó la ejecución de una rutina de reparación de dos instrucciones en la dirección 0, o bien, a elección del programador, hizo que el ordenador se detuviera". El IBM 650 (1954) incorporó la primera ocurrencia de enmascaramiento de interrupción. La Oficina Nacional de Estándares DYSEAC (1954) fue la primera en usar interrupciones para E/S. El IBM 704 fue el primero en utilizar interrupciones para la depuración, con una "trampa de transferencia", que podía invocar una rutina especial cuando se encontraba una instrucción de rama. El sistema TX-2 del Laboratorio Lincoln del MIT (1957) fue el primero en proporcionar interrupciones de múltiples niveles de prioridad.
+
+
+\vspace{4mm}
+
+Las señales de interrupción pueden ser emitidas en respuesta a eventos de hardware o software. Éstos se clasifican como interrupciones de hardware o interrupciones de software, respectivamente. Para cualquier procesador en particular, el número de tipos de interrupción está limitado por la arquitectura.
+
+
+\section{Hardware}
+
+Una interrupción de hardware es una condición relacionada con el estado del hardware que puede ser señalada por un dispositivo de hardware externo, por ejemplo, una línea de solicitud de interrupción (IRQ) en un PC, o detectada por dispositivos incorporados en la lógica del procesador (por ejemplo, el temporizador de la CPU en el Sistema IBM/370), para comunicar que el dispositivo necesita atención del sistema operativo (OS)[3] o, si no hay OS, del programa "bare-metal" que se ejecuta en la CPU. Estos dispositivos externos pueden ser parte de la computadora (por ejemplo, el controlador de disco) o pueden ser periféricos externos. Por ejemplo, al presionar una tecla del teclado o mover un mouse conectado a un puerto PS/2 se producen interrupciones de hardware que hacen que el procesador lea la pulsación de la tecla o la posición del mouse.
+
+Las interrupciones de hardware pueden llegar asincrónicamente con respecto al reloj del procesador, y en cualquier momento durante la ejecución de la instrucción. Por consiguiente, todas las señales de interrupción del hardware se condicionan sincronizándolas con el reloj del procesador, y se actúa sobre ellas sólo en los límites de la ejecución de la instrucción.
+
+En muchos sistemas, cada dispositivo está asociado con una señal de IRQ particular. Esto permite determinar rápidamente qué dispositivo de hardware solicita servicio, y agilizar el servicio de ese dispositivo.
+
+En algunos sistemas antiguos todas las interrupciones iban al mismo lugar y el sistema operativo utilizaba una instrucción especializada para determinar la interrupción no enmascarada de mayor prioridad que quedaba pendiente. En los sistemas contemporáneos generalmente hay una rutina de interrupción distinta para cada tipo de interrupción o para cada fuente de interrupción, a menudo implementada como una o más tablas de vectores de interrupción...
+
+\section{Software}
+
+El propio procesador solicita una interrupción del software al ejecutar determinadas instrucciones o cuando se cumplen ciertas condiciones. Cada señal de interrupción de software está asociada a un manejador de interrupciones particular.
+
+Una interrupción de software puede ser causada intencionadamente por la ejecución de una instrucción especial que, por diseño, invoca una interrupción cuando se ejecuta. Esas instrucciones funcionan de manera similar a las llamadas de subrutinas y se utilizan para diversos fines, como solicitar servicios del sistema operativo e interactuar con los controladores de dispositivos (por ejemplo, para leer o escribir medios de almacenamiento).
+
+Las interrupciones del software también pueden ser provocadas inesperadamente por errores de ejecución del programa. Estas interrupciones suelen denominarse trampas o excepciones. Por ejemplo, una excepción de división por cero será "lanzada" (se solicita una interrupción de software) si el procesador ejecuta una instrucción de división con divisor igual a cero. Normalmente, el sistema operativo atrapará y manejará esta excepción.
+
+
+
+\vspace{2mm}
+
+
+
+\vspace{2mm}
+
+
+\vspace{2mm}
+
+
+\vspace{2mm} 
+
+\newpage
+
+\begin{thebibliography}{X}
+
+\bibitem{uno}INTERRUPTS. Smotherman Mark. https://people.cs.clemson.edu/~mark/interrupts.html
+
+\bibitem BBASIC OF INTERRUPTS. Rosenthal Scott (May 1995).
+
+\bibitem CCOMPUTER STRUCUTRES.  Bell, C. Gordon; Newell, Allen (1971)
+
+
+
+\end{thebibliography}
+
+
+
+
+
+\end{document}
